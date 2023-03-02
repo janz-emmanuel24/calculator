@@ -1,0 +1,41 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Web Calculator
+  link(rel='stylesheet' href='css/style.css')
+.flex-container-column.card
+  .display
+    h1#displayNumber
+      | 0
+  .flex-container-row
+    .button 7
+    .button 8
+    .button 9
+    .button.operator *
+  .flex-container-row
+    .button 4
+    .button 5
+    .button 6
+    .button.operator -
+  .flex-container-row
+    .button 1
+    .button 2
+    .button 3
+    .button.operator +
+  .flex-container-row
+    .button.clear CE
+    .button 0
+    .button.equals.double(style='width: 10px') =
+//- .history.card
+//-   h2 Riwayat Perhitungan
+//-   table
+//-     thead
+//-       tr
+//-         th Angka Pertama
+//-         th Operator
+//-         th Angka Kedua
+//-         th Hasil
+//-     tbody#historyList
+//- script(src='storage.js')
+script(src='js/script.js')
